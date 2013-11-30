@@ -128,22 +128,34 @@ body .container .content #accordion_ambiti h3 {
   cursor: pointer;
 }
 body .container .content #accordion_ambiti #ambiti1.ui-accordion-header-active {
-  background: url(../images/spriteAccordion.png) no-repeat scroll 0px -200px;
+  background: url(../images/spriteAccordion.png), url(../images/arrowUp.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0px -200px, right center;
 }
 body .container .content #accordion_ambiti #ambiti1.ui-corner-all {
-  background: url(../images/spriteAccordion.png) no-repeat scroll 0px -160px;
+  background: url(../images/spriteAccordion.png), url(../images/arrowDown.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0px -160px, right center;
 }
 body .container .content #accordion_ambiti #ambiti2.ui-accordion-header-active {
-  background: url(../images/spriteAccordion.png) no-repeat scroll 0px -120px;
+  background: url(../images/spriteAccordion.png), url(../images/arrowUp.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0px -120px, right center;
 }
 body .container .content #accordion_ambiti #ambiti2.ui-corner-all {
-  background: url(../images/spriteAccordion.png) no-repeat scroll 0px -80px;
+  background: url(../images/spriteAccordion.png), url(../images/arrowDown.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0px -80px, right center;
 }
 body .container .content #accordion_ambiti #ambiti3.ui-accordion-header-active {
-  background: url(../images/spriteAccordion.png) no-repeat scroll 0px -40px;
+  background: url(../images/spriteAccordion.png), url(../images/arrowUp.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0px -40px, right center;
 }
 body .container .content #accordion_ambiti #ambiti3.ui-corner-all {
-  background: url(../images/spriteAccordion.png) no-repeat scroll 0px 0px;
+  background: url(../images/spriteAccordion.png), url(../images/arrowDown.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0px 0px, right center;
 }
 body .container .content #accordion_ambiti .ui-accordion-header-active a {
   color: #123366;
@@ -221,9 +233,33 @@ body .container .content #accordion_servizi h3.ui-corner-all {
   }
   body .container .content > section {
     padding-top: 40px;
+    padding-left: 5px;
   }
   body .container .content p {
     width: 100%;
+  }
+  body .container .content #news {
+    background: url(../images/news.jpg) right top repeat-x;
+  }
+  body .container .content #news h1 {
+    padding-top: 380px;
+  }
+  body .container .content #missione {
+    background: url(../images/bgMissione.jpg) no-repeat right top #d8dde3;
+  }
+  body .container .content #storia {
+    background: url(../images/bgstoria.jpg) no-repeat right top;
+  }
+  body .container .content .light {
+    background: none;
+    background-color: #d8dde3;
+  }
+  body .container .content #servizi {
+    background: none;
+  }
+  body .container .content #accordion_ambiti div {
+    padding-left: 5%;
+    width: 95%;
   }
 }
 @media (min-width: 1200px) {

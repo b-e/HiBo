@@ -3,8 +3,12 @@ $(document).ready(function() {
         $(section).css("min-height", $(window).height());
     })
 
-    $('#accordion_ambiti').accordion();
-    $('#accordion_servizi').accordion();
+    $('#accordion_ambiti').accordion({
+        collapsible: true
+    });
+    $('#accordion_servizi').accordion({
+        collapsible: true
+    });
 
     $('.bxslider').bxSlider();
 
