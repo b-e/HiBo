@@ -110,7 +110,7 @@ body .container .content .accordion div {
   padding-bottom: 10px;
 }
 body .container .content .ui-accordion-content-active {
-  overflow: hidden;
+  overflow: auto;
 }
 body .container .content #accordion_ambiti {
   border-bottom: 1px solid #8ba2b7;
