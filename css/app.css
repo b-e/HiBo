@@ -47,7 +47,7 @@ body .container .content {
   float: right;
   font-size: 20px;
 }
-body .container .content > div {
+body .container .content > section {
   padding-left: 30px;
   padding-bottom: 15px;
 }
@@ -219,7 +219,7 @@ body .container .content #accordion_servizi h3.ui-corner-all {
   body .container .content {
     width: 100%;
   }
-  body .container .content > div {
+  body .container .content > section {
     padding-top: 40px;
   }
   body .container .content p {
