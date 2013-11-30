@@ -1,0 +1,308 @@
+body {
+
+  font-family: knock-text;
+  top: 0;
+
+  .container {
+    max-width: @max_display_width;
+    margin: auto;
+    margin-bottom: 10px;
+
+    .menu {
+      float: left;
+      background: #131313;
+      position: fixed ! important;
+      top: 0;
+      height:100%;
+      z-index: 1030;
+
+      nav {
+        color: white;
+        padding-top: @top_padding;
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          border-top: 1px solid #787878;
+
+          .selected {
+            color: white;
+            border-bottom: 1px solid white;
+          }
+
+          li {
+            position: relative;
+            display: block;
+            color: #787878;
+            padding: 10px 20px 0 20px;
+            a {
+              color: inherit;
+              text-decoration: none;
+            }
+          }
+        }
+
+        ul:last-child {
+          padding-bottom: 10px;
+        }
+
+
+      }
+    }
+
+    .content {
+      width: 85%;
+      float: right;
+      font-size: 20px;
+
+      > div {
+        padding-left: 30px;
+        padding-bottom: 15px;
+        //background: url(../images/arrowmenu.png) no-repeat 0px 30px;
+      }
+
+      h1, h2 {
+        margin: 0;
+      }
+
+      h2 {
+        padding-top: 20px;
+        font-size: 1.5em;
+        color: @blue_subtitle;
+      }
+
+      h1 {
+        color: @blue_title;
+        font-size: 3em;
+        text-decoration: none;
+        line-height: 0.8em;
+      }
+
+      p {
+        padding-top: 15px;
+        width: 55%;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      #news {
+        background: url(../images/arrowmenu.png), url(../images/news.jpg);
+        background-position: 0px @top_padding, right top;
+        background-repeat: no-repeat, repeat-x;
+
+        h1 {
+          padding-top: 380px;
+        }
+      }
+
+      #missione {
+        background: url(../images/arrowmenu.png), url(../images/bgMissione.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0px (@top_padding+28px), right top;
+        background-color: @light_background;
+      }
+
+      #storia {
+        background: url(../images/arrowmenu.png), url(../images/bgstoria.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0px (@top_padding+56px), right top;
+      }
+
+      .light {
+        background: url(../images/arrowmenu.png) no-repeat 0px (@top_padding+84px);
+        background-color: @light_background;
+      }
+
+      #ambiti, #servizi {
+        p {
+          padding-top: 7.5px;
+          width: 100%;
+        }
+      }
+
+      #servizi {
+        background: url(../images/arrowmenu.png) no-repeat 0px (@top_padding+112px);
+      }
+
+      .accordion {
+
+        div {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+
+      .ui-accordion-content-active {
+        overflow: hidden;
+      }
+
+      #accordion_ambiti {
+
+        border-bottom: 1px solid @non_active_title;
+
+        a {
+          padding-left: 50px;
+          color: @non_active_title;
+          width: 100%;
+        }
+
+        h3 {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-top: 1px solid @non_active_title;
+          margin: 0;
+          cursor: pointer;
+        }
+
+        #ambiti1.ui-accordion-header-active{
+          background: url(../images/spriteAccordion.png) no-repeat scroll 0px -200px;
+        }
+
+        #ambiti1.ui-corner-all{
+          background: url(../images/spriteAccordion.png) no-repeat scroll 0px -160px;
+        }
+
+        #ambiti2.ui-accordion-header-active{
+          background: url(../images/spriteAccordion.png) no-repeat scroll 0px -120px;
+        }
+
+        #ambiti2.ui-corner-all{
+          background: url(../images/spriteAccordion.png) no-repeat scroll 0px -80px;
+        }
+
+        #ambiti3.ui-accordion-header-active{
+          background: url(../images/spriteAccordion.png) no-repeat scroll 0px -40px;
+        }
+
+        #ambiti3.ui-corner-all{
+          background: url(../images/spriteAccordion.png) no-repeat scroll 0px 0px;
+        }
+
+        .ui-accordion-header-active {
+          a {
+            color: @blue_subtitle;
+          }
+        }
+
+        div {
+          padding-left: 50px;
+          width: 55%;
+        }
+      }
+
+      #accordion_servizi {
+        > div {
+          background: url(../images/accordionBase.jpg) no-repeat left center;
+          background-size: 15%;
+          padding-left: 15%;
+        }
+
+        h3 {
+          color: #ffffff;
+          cursor: pointer;
+          margin: 0;
+          line-height: 40px;
+          margin-bottom: 5px;
+          padding-left: 5%;
+        }
+
+        h3.ui-accordion-header-active{
+          background-image: url(../images/minus.png);
+          background-repeat: no-repeat;
+          background-size: 2%;
+          background-position: 2% 50%;
+          background-color: @blue_subtitle;
+        }
+
+        h3.ui-corner-all {
+          background-image: url(../images/plus.png);
+          background-repeat: no-repeat;
+          background-size: 2%;
+          background-position: 2% 50%;
+          background-color: @non_active_title;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: @small-display) {
+  body {
+    .container {
+      .menu {
+        float: left;
+        background: #131313;
+        position: fixed;
+        top: 0;
+        width:100%;
+        height: 40px;
+        left: 0;
+        margin: auto;
+
+        nav {
+          color: white;
+          padding-top: 10px;
+
+          ul {
+            list-style: none;
+            padding: 0;
+            border-top: none;
+
+            .selected {
+              color: white;
+              border-bottom: 1px solid white;
+            }
+
+            li {
+              position: relative;
+              display: inline;
+              color: #787878;
+              padding: 10px 10px 0 10px;
+              a {
+                color: inherit;
+                text-decoration: none;
+              }
+            }
+          }
+
+          ul:last-child {
+            padding-bottom: 10px;
+          }
+
+
+        }
+      }
+
+      .content {
+        width: 100%;
+
+        > div {
+          padding-top: 40px;
+        }
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: @max_display_width) {
+  .menu {
+    width: 180px;
+  }
+}
+
+@media (max-width: @max_display_width) {
+  .menu {
+    width: 15%;
+  }
+}
